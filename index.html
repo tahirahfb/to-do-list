@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="to-do.css" />
+    <link rel="icon" type="images/x-icon" href="images/to-do-list-x-icon.png" />
+    <title>To-Do List</title>
+</head>
+<header><img src="images/to-do-list-logo_ex_sm.png" alt="To-Do List"></header>
+<body>
+
+    <div class="list_container">
+        <h1>To-Do List</h1>
+        <ul id="list">
+            <li>Exercise</li>
+            <li>Study DOM</li>
+            <li>Wash My Hair</li>
+            <li>Grocery Shopping</li>
+            <li>Email Hector</li>
+            </ul>
+        <form onsubmit="return addItem('list', this.inputItem)"> 
+            <input type="text" id="inputItem" placeholder="Enter New Task">
+            <input type="submit" value="Add to List" id="btn">
+          
+          </form>
+          
+          
+    </div>
+
+    <footer>
+        
+        <div class="footer_name">Tahirah Farrer-Bradley &copy; 2022</div>
+        <div class="email"><a href="mailto:tahirahfb@gmail.com">tahirahfb@gmail.com</a></div>
+    
+    </footer>    
+<script src="./to-do-list.js" type="text/javascript" charset="UTF-8"></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+</html>
